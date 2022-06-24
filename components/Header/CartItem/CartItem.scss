@@ -1,0 +1,11 @@
+.cartItem {
+	display: grid;
+	grid-template-columns: 60px 1.5fr 1fr 1fr 1fr;
+	&-elem {
+		display: flex;
+		align-items: center;
+		&.title {
+			font-size: 14px;
+		}
+	}
+}

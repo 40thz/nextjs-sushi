@@ -1,0 +1,12 @@
+.cartDropDown {
+	position: absolute;
+	right: 0;
+	top: 100%;
+	z-index: 1000;
+	right: 0;
+	width: 100vh;
+	max-width: 480px;
+	display: block;
+	background: #fff;
+	color: $black;
+}

@@ -1,0 +1,14 @@
+.header__navigation {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+
+	a {
+		color: $gray;
+		font-size: 14px;
+		outline: none;
+		&:hover {
+			color: $orange;
+		}
+	}
+}

@@ -1,0 +1,14 @@
+@import '~normalize-css/normalize.css';
+
+@import './vars.scss';
+@import './fonts.scss';
+@import './global.scss';
+
+@import '@components/Header/Header.scss';
+@import '@components/Header/CitySelector/CitySelector.scss';
+@import '@components/Header/Navigation/Navigation.scss';
+@import '@components/Header/Navigation/AuthBtn/AuthBtn.scss';
+@import '@components/Header/Search/Search.scss';
+@import '@components/Header/CartBtn/CartBtn.scss';
+@import '@components/Header/CartDropDown/CartDropDown.scss';
+@import '@components/Header/CartItem/CartItem.scss';

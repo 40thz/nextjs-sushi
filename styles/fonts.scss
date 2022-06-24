@@ -1,0 +1,35 @@
+@font-face {
+	font-family: 'Gilroy Regular';
+	src: url('../public/fonts/Gilroy-Regular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy Medium';
+	src: url('../public/fonts/Gilroy-Medium.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy Bold';
+	src: url('../public/fonts/Gilroy-Bold.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@mixin gr {
+	font-family: 'Gilroy Regular', sans-serif;
+	font-weight: 400;
+}
+
+@mixin gm {
+	font-family: 'Gilroy Medium', sans-serif;
+	font-weight: 400;
+}
+
+@mixin gb {
+	font-family: 'Gilroy Bold', sans-serif;
+	font-weight: 400;
+}
