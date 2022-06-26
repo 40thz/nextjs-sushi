@@ -13,8 +13,8 @@ type MenuProps = {
 const Navigation = ({ menu }: MenuProps) => {
 	return (
 		<nav className='header__navigation'>
-			{menu.map(item => (
-				<Link href={item.to}>
+			{menu.map((item, i) => (
+				<Link key={i} href={item.to}>
 					<a>
 						<li>{item.name}</li>
 					</a>

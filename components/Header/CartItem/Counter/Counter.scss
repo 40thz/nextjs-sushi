@@ -1,0 +1,26 @@
+.counter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    &-amount {
+        font-size: 14px;
+        color: #242e33;
+    }
+    &__btn {
+        padding: 0.5rem;
+        border-radius: 100%;
+        svg{
+            path{
+                fill: rgb(138, 148, 166);
+            }
+        }
+        &:hover {
+            background: rgba($color: $orange, $alpha: 0.3);
+            svg {
+                path {
+                    fill: $orange;
+                }
+            }
+        }
+    }
+}

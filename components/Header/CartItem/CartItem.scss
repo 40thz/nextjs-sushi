@@ -1,11 +1,40 @@
 .cartItem {
 	display: grid;
-	grid-template-columns: 60px 1.5fr 1fr 1fr 1fr;
+	grid-template-columns: 60px 1.5fr repeat(3, auto);
+	gap: 20px;
+	padding: 0.25rem 1rem;
+	border-bottom: 1px solid rgba(173, 191, 220, 0.36);
 	&-elem {
 		display: flex;
 		align-items: center;
 		&.title {
 			font-size: 14px;
+		}
+		&.price {
+			@include gm;
+			font-size: 14px;
+			line-height: 24px;
+			color: #242e33;
+		}
+		&.remove {
+
+			
+			svg{
+				padding: 0.5rem;
+				border-radius: 100%;
+				path{
+					fill: rgb(138, 148, 166);
+				}
+			}
+			&:hover {
+				svg {
+		
+					background: rgba($color: $orange, $alpha: 0.3);
+					path {
+						fill: $orange;
+					}
+				}
+			}
 		}
 	}
 }
