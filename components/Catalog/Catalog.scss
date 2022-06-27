@@ -1,0 +1,8 @@
+#catalog {
+	margin-top: 2rem;
+}
+.catalog-items {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	margin-top: 1.5rem;
+}

@@ -1,0 +1,46 @@
+footer {
+	background: rgb(243, 246, 249);
+	margin-top: 2rem;
+	padding-top: 1.5rem !important;
+	padding-bottom: 35px;
+}
+
+.footer__inside {
+	gap: 30px;
+	display: grid;
+	grid-template-columns: 1.8fr repeat(5, 1fr);
+}
+
+.footer-colum {
+	.logo {
+		margin-bottom: 10px;
+		svg {
+			width: 140px;
+		}
+	}
+	&:first-child {
+		margin-right: 3rem;
+		margin-bottom: 24px;
+	}
+	&-title {
+		@include gb;
+		font-size: 20px;
+		color: $black;
+		margin-bottom: 1rem;
+	}
+	&-nav {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		&-link {
+			color: $gray;
+			font-size: 15px;
+		}
+	}
+}
+.footer-restourant-description {
+	font-size: 12px;
+	line-height: 16px;
+	color: $gray;
+	text-align: left;
+}

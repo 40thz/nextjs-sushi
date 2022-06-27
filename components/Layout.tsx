@@ -1,6 +1,7 @@
 import Head from 'next/head'
 // import Footer from 'components/Footer/Footer'
 import Header from 'components/Header/Header'
+import Footer from './Footer/Footer'
 
 type LayoutProps = {
 	title?: string
@@ -20,6 +21,7 @@ function Layout({ title = '', description = '', children }: LayoutProps) {
 				<div className='content'>
 					<Header />
 					{children}
+					<Footer />
 				</div>
 				{/* <Footer /> */}
 			</div>

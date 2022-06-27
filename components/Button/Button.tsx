@@ -1,11 +1,11 @@
-import React from 'react';
+import React from 'react'
 type Props = {
-  name: string;
-  to?: string;
-};
+	name: string
+	to?: string
+}
 
 const Button = ({ name, to }: Props) => {
-  return <div className="button">{name}</div>;
-};
+	return <button className='button'>{name}</button>
+}
 
-export default Button;
+export default Button

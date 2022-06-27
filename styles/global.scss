@@ -2,15 +2,35 @@ body {
 	@include gr;
 	background: $bgWhite;
 	font-size: 14px;
-}
+	&::-webkit-scrollbar {
+		width: 8px;
+	}
 
+	&::-webkit-scrollbar-track {
+		background-color: #fff;
+		border-radius: 100px;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: rgba($color: rgb(214, 214, 214), $alpha: 0.7);
+		border-radius: 100px;
+	}
+}
+p {
+	margin-block-start: 0em;
+	margin-block-end: 0em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+}
 a {
 	text-decoration: none;
 	color: $gray;
 	&:hover {
 		color: $orange;
 	}
-	&:active, &:hover, &:focus {
+	&:active,
+	&:hover,
+	&:focus {
 		outline: 0;
 		outline-offset: 0;
 	}
